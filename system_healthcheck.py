@@ -24,7 +24,7 @@ def send_email_alert(cpu,memory,disk):
 
     try:
         with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
-            server.login(sender, 'khya xbve cohf xxpp')  
+            server.login(sender, '----------')  
             server.sendmail(sender, recipient, msg.as_string())
             print("health check alert.")
     except Exception as e:
